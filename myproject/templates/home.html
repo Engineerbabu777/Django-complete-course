@@ -1,22 +1,11 @@
+{%  extends 'layout.html' %}
+
+{% block title %}
+ Home
+{% endblock %}
 
 
-<!DOCTYPE html>
-{% load static %}
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-        <link rel="stylesheet" href="{% static 'css/style.css' %}" />
-    </head>
-    <body
-      
-        <h1>Home</h1>
-        <p>Check out my <a href="/about">about </a>page</p>
-        
-        <script src="" async defer></script>
-    </body>
-</html>
+{% block content %}
+<h1>Home</h1>
+<p>Check out my <a href="/about">About </a>page</p>
+{% endblock %}%}
